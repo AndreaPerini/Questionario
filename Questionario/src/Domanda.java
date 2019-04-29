@@ -7,7 +7,7 @@ public class Domanda {
 
 	public Domanda(String domanda) {
 		this.domanda = domanda;
-		risposte = new ArrayList();
+		risposte = new ArrayList<Risposta>();
 	}
 
 	public String getDomanda() {
@@ -16,6 +16,11 @@ public class Domanda {
 
 	public List<Risposta> getRisposte() {
 		return risposte;
+	}
+
+	@Override
+	public String toString() {
+		return domanda + "\n   " + risposte;
 	}
 
 }

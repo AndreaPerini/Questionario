@@ -17,4 +17,8 @@ public class Risposta {
 		this.corretta = corretta;
 	}
 
+	@Override
+	public String toString() {
+		return risposta + "\n";
+	}
 }
